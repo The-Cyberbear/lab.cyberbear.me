@@ -75,7 +75,7 @@ const translations = {
         featurecardText04: "Add your own docker-compose containers and expand your lab individually.",
         supportedSystems: "Supported Systems",
         projectAbout: "About the Project",
-        projecDescription: "Cyberbear Lab is more than just a tool - it is a platform for learners, professionals and enthusiasts to train hacking skills and test new exploits together. The project is currently in the beta phase and is being actively developed. We invite you to become part of the journey.",
+        projecDescription: "This project provides a fully Docker-based penetration testing lab. It offers a flexible and modular solution for security and penetration testing in an isolated and controlled environment. With the Setup file, users can quickly and easily configure and deploy the lab by selecting and launching the necessary containers. The configuration is modular, allowing various security tools, exploit servers, and target machines to be added or removed depending on the specific needs of each test. This makes the lab highly customizable for different penetration testing scenarios. The pentest lab runs on Docker, enabling easy deployment and management of containers. The entire infrastructure is automatically set up through the setup script, eliminating the need for complex manual configuration. After the initial setup, the lab can be quickly started again using the Startup file to continue working.",
         toTheProjectButton: "To the Project",
     },
 };
