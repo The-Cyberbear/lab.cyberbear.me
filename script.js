@@ -14,6 +14,11 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
     this.reset();
 });
 
+document.querySelector('.nav-toggle').addEventListener('click', () => {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+});
+
 // Animationen für sichtbare Elemente
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {

@@ -13,21 +13,23 @@
 </head>
 
 <body>
-    <!-- <div class="development-banner" data-key="developmentNote"> -->
-        
-    </div>
     <!-- Header-Bereich -->
     <header>
         <nav aria-label="Hauptnavigation">
-            <div class="logo"><i class="fa-solid fa-flask"> Cyberbear Lab</i></div>
+            <div class="nav-header">
+                <div class="logo"><i class="fa-solid fa-flask"> Cyberbear Lab</i></div>
+                <button class="nav-toggle" aria-label="Menü öffnen/schließen">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
             <ul class="nav-links">
                 <li><a href="#home"><i class="fa-solid fa-house"></i></a></li>
                 <li><a href="#features"><i class="fa-solid fa-list-ul"></i></a></li>
                 <li><a href="#about"><i class="fa-solid fa-circle-info"></i></a></li>
                 <li><a href="#contact"><i class="fa-solid fa-envelope"></i></a></li>
-                <li><a href="https://github.com/The-Cyberbear/laboratory" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://github.com/The-Cyberbear/laboratory" target="_blank"><i
+                            class="fa-brands fa-github"></i></a></li>
             </ul>
-            <!-- Sprachumschalter -->
             <select id="language-switcher">
                 <option value="de">Deutsch</option>
                 <option value="en">English</option>
@@ -48,33 +50,34 @@
 
     <!-- Features-Bereich -->
     <section id="features" class="features">
-        <h3 class="feature-heading" data-key="titelFeature"></h2>
-        <div class="feature-cards">
-            <div class="card">
-                <!-- <img src="images/docker-logo.png" alt="Docker Logo" class="card-image" loading="lazy"> -->
-                <i class="fa-brands fa-docker"></i>
-                <h3 data-key="featurecardTitel01"></h3>
-                <p data-key="featurecardText01"></p>
+        <h3 class="feature-heading" data-key="titelFeature">
+            </h2>
+            <div class="feature-cards">
+                <div class="card">
+                    <!-- <img src="images/docker-logo.png" alt="Docker Logo" class="card-image" loading="lazy"> -->
+                    <i class="fa-brands fa-docker"></i>
+                    <h3 data-key="featurecardTitel01"></h3>
+                    <p data-key="featurecardText01"></p>
+                </div>
+                <div class="card">
+                    <!-- <img src="images/container-image.png" alt="Container Symbol" class="card-image" loading="lazy"> -->
+                    <i class="fas fa-cogs"></i>
+                    <h3 data-key="featurecardTitel02"></h3>
+                    <p data-key="featurecardText02"></p>
+                </div>
+                <div class="card">
+                    <!-- <img src="images/terminal-image.png" alt="Terminal Interface" class="card-image" loading="lazy"> -->
+                    <i class="fa-solid fa-terminal"></i>
+                    <h3 data-key="featurecardTitel03"></h3>
+                    <p data-key="featurecardText03"></p>
+                </div>
+                <div class="card">
+                    <!-- <img src="images/customization.png" alt="Customization Symbol" class="card-image" loading="lazy"> -->
+                    <i class="fas fa-sync-alt"></i>
+                    <h3 data-key="featurecardTitel04"></h3>
+                    <p data-key="featurecardText04"></p>
+                </div>
             </div>
-            <div class="card">
-                <!-- <img src="images/container-image.png" alt="Container Symbol" class="card-image" loading="lazy"> -->
-                <i class="fas fa-cogs"></i>
-                <h3 data-key="featurecardTitel02"></h3>
-                <p data-key="featurecardText02"></p>
-            </div>
-            <div class="card">
-                <!-- <img src="images/terminal-image.png" alt="Terminal Interface" class="card-image" loading="lazy"> -->
-                <i class="fa-solid fa-terminal"></i>
-                <h3 data-key="featurecardTitel03"></h3>
-                <p data-key="featurecardText03"></p>
-            </div>
-            <div class="card">
-                <!-- <img src="images/customization.png" alt="Customization Symbol" class="card-image" loading="lazy"> -->
-                <i class="fas fa-sync-alt"></i>
-                <h3 data-key="featurecardTitel04"></h3>
-                <p data-key="featurecardText04"></p>
-            </div>
-        </div>
     </section>
 
     <section id="supported-systems" class="supported-systems">
@@ -86,15 +89,15 @@
             </div>
             <div class="supported-system-card">
                 <li><i class="fa-brands fa-ubuntu"></i>
-                <h4>Ubuntu</h4>
+                    <h4>Ubuntu</h4>
             </div>
             <div class="supported-system-card">
                 <li><i class="fa-brands fa-fedora"></i>
-                <h4>Fedora</h4>
+                    <h4>Fedora</h4>
             </div>
             <div class="supported-system-card">
                 <li><i class="fa-solid fa-mountain"></i>
-                <h4>Alpine Linux</h4>
+                    <h4>Alpine Linux</h4>
             </div>
         </div>
     </section>
@@ -103,7 +106,8 @@
     <section id="about" class="about">
         <h2 data-key="projectAbout"></h2>
         <p data-key="projecDescription"></p>
-        <a href="https://github.com/The-Cyberbear/laboratory" target="_blank" class="cta" data-key="toTheProjectButton"></a>
+        <a href="https://github.com/The-Cyberbear/laboratory" target="_blank" class="cta"
+            data-key="toTheProjectButton"></a>
     </section>
 
     <!-- Kontaktbereich -->

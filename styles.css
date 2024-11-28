@@ -11,56 +11,75 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Header */
+/* Basis-Styles */
 header {
-    background: #222;
-    /* background: linear-gradient(135deg, #d72638, #f8e71c); /* Weihnachtlich */
-    color: #fff;
-    padding: 1em 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
 }
 
-nav {
+.nav-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 2rem;
+}
+
+.logo {
+    font-size: 1.5em;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
 }
 
-.nav-links a {
-    color: #fff;
+.nav-links li a {
+    color: white;
     text-decoration: none;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #ff8c00;
-}
-
-.nav-links a.active {
-    color: #ff6700; /* Hervorhebungsfarbe */
-    font-weight: bold;
 }
 
 #language-switcher {
-    background: #222;
-    color: #fff;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    padding: 0.5em;
-    font-size: 1rem;
+    margin-left: auto;
+}
+
+/* Mobile spezifische Anpassungen */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: white;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #444;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    #language-switcher {
+        margin-top: 10px;
+    }
 }
 
 /* Hero Section */
